@@ -29,3 +29,32 @@ ul {
 li {
     margin: 12px 0;
 }
+
+
+.support-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.support-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #dce3ef;
+    flex: 1;
+    min-width: 200px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.support-card h3 {
+    color: #155eef;
+    margin-top: 0;
+}
+
+.support-card p {
+    color: #526078;
+    line-height: 1.6;
+}
