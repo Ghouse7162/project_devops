@@ -4,27 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickCart Support Portal</title>
+    <meta name="description" content="QuickCart support for tracking orders, missing items, returns and refunds.">
+    <title>QuickCart | Customer Support</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>How can we help you?</h2>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html">Quick<span>Cart</span><i>.</i></a>
+            <div class="nav-links">
+                <a class="active" href="index.html">Home</a>
+                <a href="track-order.html">Track Order</a>
+                <a href="returns.html">Returns</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a class="nav-help" href="contact.html">Get help ↗</a>
+        </nav>
+    </header>
 
-    <div class="support-options">
-        <div class="support-card">
-            <h3>📦 Track My Order</h3>
-            <p>Check the status of your order and delivery.</p>
-        </div>
+    <main class="home-main">
+        <section class="hero">
+            <div class="hero-photo" aria-hidden="true"></div>
+            <div class="hero-shade" aria-hidden="true"></div>
 
-        <div class="support-card">
-            <h3>🛍️ Missing Item</h3>
-            <p>Report an item missing from your delivery.</p>
-        </div>
+            <div class="hero-content">
+                <div class="status-label">
+                    <span class="status-dot"></span>
+                    QUICKCART CUSTOMER CARE
+                </div>
 
-        <div class="support-card">
-            <h3>🔄 Returns &amp; Refunds</h3>
-            <p>Get help with returns and refund requests.</p>
+                <h1>Your order.<br>Our <span>priority.</span></h1>
+
+                <p class="hero-description">
+                    From checkout to your doorstep, we're here to make
+                    every delivery feel effortless.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="track-order.html">
+                        Track your order <span>→</span>
+                    </a>
+                    <a class="button button-glass" href="#support">
+                        Explore support
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    <span class="note-check">✓</span>
+                    Helpful answers for your shopping journey
+                </p>
+            </div>
+
+            <div class="hero-caption">
+                <span>QUICKCART LOGISTICS</span>
+                <span>DELIVERING WITH CARE</span>
+            </div>
+        </section>
+
+        <section class="support-section" id="support">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">HERE WHEN YOU NEED US</span>
+                    <h2>How can we help?</h2>
+                    <p>Choose a topic and find your next step.</p>
+                </div>
+                <a class="text-link" href="contact.html">All support options ↗</a>
+            </div>
+
+            <div class="support-options">
+                <article class="support-card">
+                    <div class="card-top">
+                        <div class="card-icon icon-blue">↗</div>
+                        <span class="card-number">01</span>
+                    </div>
+                    <h3>Track an order</h3>
+                    <p>Find out how to check your delivery status and order progress.</p>
+                    <a href="track-order.html">Track order <span>→</span></a>
+                </article>
+
+                <article class="support-card">
+                    <div class="card-top">
+                        <div class="card-icon icon-orange">□</div>
+                        <span class="card-number">02</span>
+                    </div>
+                    <h3>Missing item</h3>
+                    <p>Something didn't arrive? Learn how to report an issue.</p>
+                    <a href="missing-item.html">Report an issue <span>→</span></a>
+                </article>
+
+                <article class="support-card">
+                    <div class="card-top">
+                        <div class="card-icon icon-green">↶</div>
+                        <span class="card-number">03</span>
+                    </div>
+                    <h3>Returns &amp; refunds</h3>
+                    <p>Understand return steps and how refund requests work.</p>
+                    <a href="returns.html">Explore returns <span>→</span></a>
+                </article>
+
+                <article class="support-card">
+                    <div class="card-top">
+                        <div class="card-icon icon-purple">✉</div>
+                        <span class="card-number">04</span>
+                    </div>
+                    <h3>Contact support</h3>
+                    <p>Tell us what you need help with and find the next step.</p>
+                    <a href="contact.html">Get in touch <span>→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="help-banner">
+            <div class="banner-mark">Q</div>
+            <div class="banner-copy">
+                <span class="section-kicker">WE'RE HERE FOR YOU</span>
+                <h2>Need a little more help?</h2>
+                <p>Visit our contact page to explore your support options.</p>
+            </div>
+            <a class="button banner-button" href="contact.html">
+                Contact support →
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html">Quick<span>Cart</span><i>.</i></a>
+        <p>Customer care, made simpler.</p>
+        <div class="footer-links">
+            <a href="track-order.html">Track Order</a>
+            <a href="returns.html">Returns</a>
+            <a href="contact.html">Contact</a>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <span>© 2026 QuickCart Support Portal</span>
+            <span>Built as a cloud learning project</span>
+        </div>
+    </footer>
 </body>
 </html>

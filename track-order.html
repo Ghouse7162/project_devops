@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order | QuickCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a class="brand" href="index.html">Quick<span>Cart</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="track-order.html">Track Order</a>
+                <a href="returns.html">Returns</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <span class="eyebrow">Order assistance</span>
+            <h1>Track your order</h1>
+            <p>Enter your order number to check its delivery status.</p>
+        </section>
+
+        <section class="support-section">
+            <div class="support-card">
+                <h2>Find your order</h2>
+                <form id="tracking-form">
+                    <label for="order-id">Order number</label>
+                    <input
+                        type="text"
+                        id="order-id"
+                        placeholder="Example: QC12345"
+                        required
+                    >
+                    <button class="button" type="submit">Check status</button>
+                </form>
+                <p id="tracking-result" role="status"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 QuickCart Support Portal · Built as a cloud learning project</p>
+    </footer>
+
+    <script>
+        document.getElementById("tracking-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const orderId = document.getElementById("order-id").value.trim();
+            const result = document.getElementById("tracking-result");
+
+            result.textContent = "Demo only: Order " + orderId +
+                " was received. Live tracking is not connected yet.";
+        });
+    </script>
+</body>
+</html>

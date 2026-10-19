@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Support | QuickCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a class="brand" href="index.html">Quick<span>Cart</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="track-order.html">Track Order</a>
+                <a href="returns.html">Returns</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <span class="eyebrow">QuickCart customer care</span>
+            <h1>How can we support you?</h1>
+            <p>Send a demo support request or choose a topic to get started.</p>
+        </section>
+
+        <section class="support-section">
+            <div class="support-card">
+                <h2>Send a support request</h2>
+
+                <form id="contact-form">
+                    <label for="customer-name">Your name</label>
+                    <input
+                        type="text"
+                        id="customer-name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="customer-email">Email address</label>
+                    <input
+                        type="email"
+                        id="customer-email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                    <label for="topic">What do you need help with?</label>
+                    <select id="topic" required>
+                        <option value="">Choose a topic</option>
+                        <option value="Order tracking">Order tracking</option>
+                        <option value="Missing item">Missing item</option>
+                        <option value="Returns and refunds">Returns and refunds</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        rows="4"
+                        placeholder="Describe your issue"
+                        required
+                    ></textarea>
+
+                    <button class="button" type="submit">Prepare request</button>
+                </form>
+
+                <p id="contact-result" role="status"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 QuickCart Support Portal · Built as a cloud learning project</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const customerName =
+                document.getElementById("customer-name").value.trim();
+            const topic = document.getElementById("topic").value;
+
+            document.getElementById("contact-result").textContent =
+                "Demo only: Thank you, " + customerName +
+                ". Your '" + topic +
+                "' request is ready, but it has not been sent to a support team.";
+        });
+    </script>
+</body>
+</html>
