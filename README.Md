@@ -5,6 +5,33 @@
 QuickCart Support Portal is a static website that demonstrates how to deploy a web application on an AWS EC2 Linux server using Apache HTTP Server and GitHub.
 
 The portal provides sample support options for order tracking, missing items, and returns and refunds.
+# QuickCart Support Portal
+
+A responsive support portal built using HTML and CSS, with a focus on a clean, modern user experience.
+
+## 🌐 Live Website
+
+**[Visit QuickCart Support Portal](https://ghouse7162.github.io/project_devops/)**
+
+## Features
+
+- Order tracking demo page
+- Missing item support page
+- Returns support page
+- Contact support page
+- Responsive design
+- Delivery-themed hero image
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Git and GitHub
+- GitHub Pages for hosting
+
+## Repository
+
+[View the source code on GitHub](https://github.com/Ghouse7162/project_devops)
 
 ## Architecture
 
